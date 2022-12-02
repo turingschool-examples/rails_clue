@@ -95,8 +95,7 @@ puts "Creating more guestbook entries for Murder Room!"
 end
 
 puts "Updating murderer's weapon!"
-envelope.character.update_attributes!(weapon: envelope.weapon)
-
+envelope.character.update(weapon: envelope.weapon)
 puts "Assigning weapons to other characters!"
 puts "There are #{Weapon.count} weapons to be assigned!"
 
