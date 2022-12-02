@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.com/julienfitz/rails_clue.svg?branch=master)](https://travis-ci.com/julienfitz/rails_clue)
 
+Forked from [julienfitz: https://github.com/julienfitz/rails_clue](https://github.com/julienfitz/rails_clue)
+
+This fork has been up(down?)graded to match Turing's current Rails & Ruby versions, and to use Postgresql instead of SQLite3. 
+
 # Rails::Clue
 
 Learn about different ActiveRecord query methods by playing a game of Clue. It's you against the database!
@@ -10,13 +14,7 @@ Learn about different ActiveRecord query methods by playing a game of Clue. It's
 
 1. Clone this repo! You can also fork it and then clone it if you want, I'm not the boss of you!
 2. Run `bundle install`. This might take a few minutes. Don't be alarmed if it seems to get stuck on nokogiri... it'll move. Eventually.
-3. Run `rails db:setup` in your terminal, from this directory. If things get screwy at this point, you may have to go through the setup steps manually:
-```
-rails db:drop # gotta get rid of whatever half-baked database you might have created already
-rails db:create
-rails db:migrate
-rails db:seed
-```
+3. Run `rails db:{drop,create,migrate,seed}` in your terminal, from this directory. 
 4. Run `rails console` or `rails c` (they do the same thing, just one has fewer letters to type) in your terminal to start up the Rails console.
 5. Follow along with the live demonstration! Or, if I'm not currently talking at you, feel free to putz around on your own. There are some vague instructions below.
 6. If you got stuck on any of these steps and discovered a fix/workaround/magical incantation, feel free to submit a pull request to update these steps!
