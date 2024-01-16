@@ -80,7 +80,7 @@ GuestbookEntry.create!(
 )
 
 puts "Adding murder time range to envelope!"
-envelope.update_attributes!(murder_start_time: start_time, murder_end_time: end_time)
+envelope.update!(murder_start_time: start_time, murder_end_time: end_time)
 
 puts "Creating more guestbook entries for Murder Room!"
 10.times do
